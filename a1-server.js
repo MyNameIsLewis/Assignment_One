@@ -35,6 +35,7 @@ function handleRequest(request, response){
     // and sum (global) variables
     // 2. Add a debug message which ouputs the current values of the augend addend and sum variables
     console.re.log("The answer to this equation is " + sum);
+    console.re.log("Augend = " + augend + " Addend = " + addend + " Sum = " + sum);
 }
 
 // Create an instance of a http server
@@ -48,4 +49,5 @@ server.listen(server_port, server_ip_address, function(){
     // 3. Add a debug message which ouputs a message indicating the server is started (listening for user requests).
     // 4. Add a debug message which ouputs your server ip address and your server port number. Your server ip address 
     // and your server port number values are available in the server_ip_address and server_port program global variables
+    console.re.log("HTTP Server listening on: " + server_ip_address + ":" + server_port);
 });
